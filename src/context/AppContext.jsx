@@ -12,7 +12,7 @@ const getSavedUser = () => {
 
 const initialState = {
   currentUser: getSavedUser(),
-  theme: localStorage.getItem('theme') || 'dark',
+  theme: localStorage.getItem('theme') || 'light',
   notifications: NOTIFICATIONS,
   tasks: TASKS,
   projects: PROJECTS,
