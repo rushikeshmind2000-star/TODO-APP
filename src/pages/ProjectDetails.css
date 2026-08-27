@@ -1,0 +1,203 @@
+.project-details-page { max-width: 1200px; margin: 0 auto; }
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-5);
+  transition: all var(--transition-fast);
+}
+
+.back-btn:hover { background: var(--bg-surface); color: var(--text-primary); }
+
+.proj-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.proj-detail-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.proj-detail-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.proj-detail-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.proj-detail-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Tabs */
+.proj-tabs {
+  display: flex;
+  gap: var(--space-1);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--space-6);
+}
+
+.proj-tab {
+  padding: 10px 18px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all var(--transition-fast);
+}
+
+.proj-tab:hover { color: var(--text-primary); }
+.proj-tab.active { color: var(--brand-primary); border-bottom-color: var(--brand-primary); }
+
+/* Overview */
+.proj-overview { display: flex; flex-direction: column; gap: var(--space-5); }
+
+.proj-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.proj-stat-card {
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.proj-stat-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; margin-bottom: var(--space-2); }
+.proj-stat-value { font-size: 2rem; font-weight: 800; letter-spacing: -0.04em; }
+
+.proj-progress-section {}
+
+.proj-status-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.proj-status-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.proj-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.proj-status-label {
+  width: 90px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.proj-status-bar-wrap { flex: 1; }
+.proj-status-bar {
+  height: 6px;
+  background: var(--bg-surface-3);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.proj-status-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.6s ease;
+}
+
+.proj-status-count {
+  width: 28px;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Members */
+.proj-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+
+.member-card { padding: var(--space-5); }
+
+.member-card-top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.member-name { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); }
+.member-role { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+
+.member-stats {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--border-color);
+  padding-top: var(--space-4);
+}
+
+.member-stat { text-align: center; }
+.member-stat-val { display: block; font-size: 1.2rem; font-weight: 700; color: var(--text-primary); }
+.member-stat-label { font-size: 0.68rem; color: var(--text-muted); }
+
+/* Activity */
+.proj-activity .card-body { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.proj-activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.activity-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .proj-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}

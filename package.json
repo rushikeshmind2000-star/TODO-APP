@@ -1,0 +1,24 @@
+{
+  "name": "todo-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "date-fns": "^4.4.0",
+    "lucide-react": "^1.34.0",
+    "react-router-dom": "^7.18.2",
+    "recharts": "^3.10.1"
+  }
+}
