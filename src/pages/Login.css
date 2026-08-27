@@ -301,6 +301,9 @@
   .login-layout {
     justify-content: center;
   }
+  .login-left-text {
+    display: none;
+  }
   .login-right {
     max-width: 100%;
     margin-left: 0;

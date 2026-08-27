@@ -18,7 +18,7 @@ const initialState = {
   projects: PROJECTS,
   members: MEMBERS,
   toasts: [],
-  sidebarOpen: true,
+  sidebarOpen: window.innerWidth > 768,
   searchQuery: '',
   filters: {
     status: 'ALL',

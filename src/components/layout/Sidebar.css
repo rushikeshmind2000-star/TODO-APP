@@ -238,12 +238,26 @@
 }
 
 /* Mobile overlay */
+.sidebar-mobile-overlay {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .sidebar-mobile-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: var(--modal-overlay);
+    z-index: 150;
+    backdrop-filter: blur(2px);
+  }
+
   .sidebar {
     transform: translateX(-100%);
     transition: transform var(--transition-normal);
   }
   .sidebar.mobile-open {
     transform: translateX(0);
+    width: var(--sidebar-width);
   }
 }
